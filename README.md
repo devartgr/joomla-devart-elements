@@ -4,7 +4,7 @@ Professional Joomla 6 reusable content elements solution designed for business w
 
 ![Joomla](https://img.shields.io/badge/Joomla-6.x-blue)
 ![PHP](https://img.shields.io/badge/PHP-8.2%2B-green)
-![Release](https://img.shields.io/badge/Version-1.0.0-orange)
+![Release](https://img.shields.io/badge/Version-1.0.1-orange)
 ![License](https://img.shields.io/badge/License-GPLv3-red)
 
 ---
@@ -97,6 +97,7 @@ Features include:
 - Element management
 - Quick editing
 - Production-ready workflow
+- Native Joomla publishing controls
 
 ---
 
@@ -191,42 +192,26 @@ Not Supported:
 
 ## Current Version
 
-**1.0.0**
+**1.0.1**
 
 ---
 
-## What's New in 1.0.0
+## What's New in 1.0.1
 
-### Added
+### Fixed
 
-- Initial stable release
-- Reusable content elements architecture
-- FAQ Elements
-- Tabs Elements
-- Accordion Elements
-- Navigation Elements
-- Pricing Table Elements
-- Media Elements
-- Import / Export functionality
-- Native frontend module
-- GitHub update server support
+- Fixed Publish action from the administrator toolbar
+- Fixed Unpublish action from the administrator toolbar
+- Fixed Publish and Unpublish using the status icon in administrator list views
+- Fixed batch Publish and Unpublish operations
+- Fixed Joomla native state handling by using the standard `state` field throughout the component
+- Added missing Joomla administrator language strings for Publish, Unpublish, Archive, Trash and Check-in actions
 
 ### Improved
 
-- Modern Joomla 6 MVC architecture
-- Lightweight frontend rendering
-- Optimized administrator workflow
-- Improved performance
-- Cloudflare compatibility
-- Production-ready architecture
-
-### Security
-
-- Joomla ACL support
-- CSRF protection
-- URL validation
-- SQL parameter binding
-- Secure Import / Export validation
+- Improved integration with Joomla native administrator controllers
+- Improved backend consistency and administrator feedback messages
+- Improved overall stability and native Joomla compatibility
 
 ---
 
