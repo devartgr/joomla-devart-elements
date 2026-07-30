@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelogs>
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
+        <version>1.0.0</version>
+
+        <addition>
+            <item>Added full Joomla 6 native DevArt Elements package</item>
+            <item>Added reusable content elements architecture</item>
+            <item>Added FAQ Elements</item>
+            <item>Added Tabs Elements</item>
+            <item>Added Accordion Elements</item>
+            <item>Added Navigation Elements</item>
+            <item>Added Pricing Table Elements</item>
+            <item>Added Media Elements with local and YouTube support</item>
+            <item>Added Import and Export functionality</item>
+            <item>Added frontend rendering module</item>
+            <item>Added GitHub-based Joomla update server support</item>
+        </addition>
+
+        <change>
+            <item>Built using modern Joomla 6 MVC architecture and PHP 8.2+</item>
+            <item>Optimized frontend rendering for lightweight and high-performance websites</item>
+            <item>Improved administrator interface and workflow for managing reusable elements</item>
+            <item>Optimized database queries and rendering performance</item>
+            <item>Improved compatibility with Cloudflare and production environments</item>
+            <item>Enhanced module-based publishing workflow</item>
+        </change>
+
+        <security>
+            <item>Added ACL support for administrator operations</item>
+            <item>Added CSRF protection for administrator actions</item>
+            <item>Added URL validation and input sanitization</item>
+            <item>Added SQL parameter binding for all database operations</item>
+            <item>Added secure Import and Export validation</item>
+            <item>Built for Joomla 6 and PHP 8.2+ using modern namespaces and production-safe architecture</item>
+        </security>
+
+        <note>
+            <item>Initial public stable release of DevArt Elements for Joomla 6</item>
+            <item>Built for Joomla 6 only with PHP 8.2+</item>
+            <item>Designed for lightweight, reusable and production-ready content elements</item>
+            <item>Always test on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+</changelogs>
