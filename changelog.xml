@@ -4,6 +4,33 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.0.1</version>
+
+        <fix>
+            <item>Fixed Publish action from the administrator toolbar</item>
+            <item>Fixed Unpublish action from the administrator toolbar</item>
+            <item>Fixed Publish and Unpublish using the status icon in administrator list views</item>
+            <item>Fixed batch Publish and Unpublish operations</item>
+            <item>Fixed Joomla native state handling by using the standard state field throughout the component</item>
+            <item>Added missing Joomla administrator language strings for Publish, Unpublish, Archive, Trash and Check-in actions</item>
+        </fix>
+
+        <change>
+            <item>Improved integration with Joomla native administrator controllers</item>
+            <item>Improved backend consistency and administrator feedback messages</item>
+            <item>Improved overall stability and native Joomla compatibility</item>
+        </change>
+
+        <note>
+            <item>Maintenance release focused on administrator usability and Joomla native workflow compatibility</item>
+            <item>Fully compatible with existing DevArt Elements 1.0.0 installations</item>
+            <item>No database structure changes</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.0.0</version>
 
         <addition>
