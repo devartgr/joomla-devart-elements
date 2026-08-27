@@ -1,76 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
+        <version>1.1.0</version>
+        <addition>
+            <item>Fifteen locales for administrator, module and package (en-GB and el-GR curated; fr-FR, de-DE, es-ES, it-IT, pt-BR, cs-CZ, nl-NL, pl-PL, ru-RU, uk-UA, ja-JP, tr-TR, zh-CN)</item>
+            <item>Administrator hub dashboard for Content Blocks, Navigation, Data, Media, Pricing and Tools with Options and Modules shortcuts</item>
+            <item>Lightweight ArticleSelect picker for large article sites (replaces slow Joomla modal_article)</item>
+            <item>Module output cache clearing after element save and import</item>
+            <item>Shared language keys for administrator forms and frontend Read more / Open page / media controls</item>
+        </addition>
+        <change>
+            <item>First public release after 1.0.1 (intermediate private builds 1.0.2–1.0.12 were not published separately; their changes are included here)</item>
+            <item>ElementFamilyHelper consolidated: component is the single source of truth; module uses a thin site facade</item>
+            <item>Module configuration uses only the unified element_id selector (legacy per-type hidden fields removed)</item>
+            <item>Accordion titles wrap responsively on desktop and mobile</item>
+            <item>PHP minimum 8.3.0; Joomla 6+ only</item>
+        </change>
+        <fix>
+            <item>Import HTML sanitization for stored XSS in content_json</item>
+            <item>Upload validation with is_uploaded_file() on import preview</item>
+            <item>Strict JSON encode/decode in ElementModel with user-facing errors</item>
+            <item>ElementTable title requirement and unique type+alias validation</item>
+            <item>URL filter="url" on administrator URL fields</item>
+            <item>Schema checker false positive from non-Joomla IF NOT EXISTS SQL syntax</item>
+        </fix>
+        <security>
+            <item>Import path sanitizes non-URL strings in content_json via Joomla InputFilter</item>
+            <item>Rejects non-upload file paths during import preview</item>
+        </security>
+        <note>
+            <item>Public release replacing the previous public line at 1.0.1</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
 
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
         <version>1.0.1</version>
-
-        <fix>
-            <item>Fixed Publish action from the administrator toolbar</item>
-            <item>Fixed Unpublish action from the administrator toolbar</item>
-            <item>Fixed Publish and Unpublish using the status icon in administrator list views</item>
-            <item>Fixed batch Publish and Unpublish operations</item>
-            <item>Fixed Joomla native state handling by using the standard state field throughout the component</item>
-            <item>Added missing Joomla administrator language strings for Publish, Unpublish, Archive, Trash and Check-in actions</item>
-        </fix>
-
-        <change>
-            <item>Improved integration with Joomla native administrator controllers</item>
-            <item>Improved backend consistency and administrator feedback messages</item>
-            <item>Improved overall stability and native Joomla compatibility</item>
-        </change>
-
-        <note>
-            <item>Maintenance release focused on administrator usability and Joomla native workflow compatibility</item>
-            <item>Fully compatible with existing DevArt Elements 1.0.0 installations</item>
-            <item>No database structure changes</item>
-        </note>
-    </changelog>
-
-    <changelog>
-        <element>pkg_devartelements</element>
-        <type>package</type>
-        <version>1.0.0</version>
-
         <addition>
-            <item>Added full Joomla 6 native DevArt Elements package</item>
-            <item>Added reusable content elements architecture</item>
-            <item>Added FAQ Elements</item>
-            <item>Added Tabs Elements</item>
-            <item>Added Accordion Elements</item>
-            <item>Added Navigation Elements</item>
-            <item>Added Pricing Table Elements</item>
-            <item>Added Media Elements with local and YouTube support</item>
-            <item>Added Import and Export functionality</item>
-            <item>Added frontend rendering module</item>
-            <item>Added GitHub-based Joomla update server support</item>
+            <item>Initial public package of DevArt Elements for Joomla 6</item>
+            <item>Component com_devartelements for reusable content elements</item>
+            <item>Site module mod_devartelements for frontend rendering</item>
         </addition>
-
-        <change>
-            <item>Built using modern Joomla 6 MVC architecture and PHP 8.2+</item>
-            <item>Optimized frontend rendering for lightweight and high-performance websites</item>
-            <item>Improved administrator interface and workflow for managing reusable elements</item>
-            <item>Optimized database queries and rendering performance</item>
-            <item>Improved compatibility with Cloudflare and production environments</item>
-            <item>Enhanced module-based publishing workflow</item>
-        </change>
-
-        <security>
-            <item>Added ACL support for administrator operations</item>
-            <item>Added CSRF protection for administrator actions</item>
-            <item>Added URL validation and input sanitization</item>
-            <item>Added SQL parameter binding for all database operations</item>
-            <item>Added secure Import and Export validation</item>
-            <item>Built for Joomla 6 and PHP 8.2+ using modern namespaces and production-safe architecture</item>
-        </security>
-
         <note>
-            <item>Initial public stable release of DevArt Elements for Joomla 6</item>
-            <item>Built for Joomla 6 only with PHP 8.2+</item>
-            <item>Designed for lightweight, reusable and production-ready content elements</item>
-            <item>Always test on a staging environment before production deployment</item>
+            <item>Previous public release before 1.1.0</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
         </note>
     </changelog>
-
 </changelogs>
