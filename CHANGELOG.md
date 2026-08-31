@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.1 (2026-08-31)
+
+### Fixed
+- Clean install now creates `#__devartelements_elements`: install/uninstall SQL
+  manifests use `charset="utf8"` as required by Joomla’s installer (previously
+  `utf8mb4` caused the SQL files to be skipped entirely).
+- Schema update `1.1.1.sql` recreates the full elements table with
+  `CREATE TABLE IF NOT EXISTS` so sites that installed `1.1.0` without the
+  table can repair via package update or Database → Update Structure.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.0 (2026-08-27)
 
 First public release after `1.0.1`. Intermediate private builds `1.0.2`–`1.0.12`

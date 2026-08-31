@@ -3,6 +3,21 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.1</version>
+        <fix>
+            <item>Clean install now creates the elements table: install/uninstall SQL use charset="utf8" as required by the Joomla installer (utf8mb4 previously caused SQL files to be skipped)</item>
+            <item>Schema update 1.1.1.sql recreates the full elements table with CREATE TABLE IF NOT EXISTS for sites that installed 1.1.0 without the table</item>
+        </fix>
+        <note>
+            <item>Recommended update for all DevArt Elements 1.1.0 installations, especially clean installs that reported a missing devartelements_elements table</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.0</version>
         <addition>
             <item>Fifteen locales for administrator, module and package (en-GB and el-GR curated; fr-FR, de-DE, es-ES, it-IT, pt-BR, cs-CZ, nl-NL, pl-PL, ru-RU, uk-UA, ja-JP, tr-TR, zh-CN)</item>
