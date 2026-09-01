@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.1.2 (2026-09-01)
+
+### Added
+- Navigation **Dropdown Menu** element: horizontal menu with dropdown submenus,
+  either from a selected Joomla menu or custom manual items with nested children.
+- Responsive mobile menu toggle, hover/click submenu trigger, DevArt color themes.
+- Data **Feature Blocks** element: full-width column grid with icon, subtitle,
+  title and read-more link with underline; per-item DevArt themes; Font Awesome
+  icon picker in administrator.
+
+### Changed
+- **Copyright** and **Branding**: color theme now styles accent, text and links
+  (not background tint only).
+- **Copyright** and **Branding**: new Background option — None or Theme color.
+
+### Fixed
+- **Feature Blocks**: theme backgrounds use visible DevArt pastel tints
+  (red, orange, blue, green, yellow, purple, gray, dark).
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.1 (2026-08-31)
 
 ### Fixed

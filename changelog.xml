@@ -3,6 +3,30 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.2</version>
+        <addition>
+            <item>Navigation Dropdown Menu element with Joomla menu or custom manual items and nested submenu children</item>
+            <item>Responsive mobile menu toggle, hover/click submenu trigger and DevArt color themes</item>
+            <item>Data Feature Blocks element with configurable columns, per-item DevArt themes and Font Awesome icon picker</item>
+            <item>Full-width block row layout with subtitle, title and read-more underline link</item>
+        </addition>
+        <change>
+            <item>Copyright and Branding color theme now styles accent, text and links instead of background tint only</item>
+            <item>Copyright and Branding add Background option: None or Theme color</item>
+        </change>
+        <fix>
+            <item>Feature Blocks theme backgrounds use visible DevArt pastel tints (red, orange, blue, green, yellow, purple, gray, dark)</item>
+        </fix>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.1</version>
         <fix>
             <item>Clean install now creates the elements table: install/uninstall SQL use charset="utf8" as required by the Joomla installer (utf8mb4 previously caused SQL files to be skipped)</item>
