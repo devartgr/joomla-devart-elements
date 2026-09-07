@@ -3,6 +3,32 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.3</version>
+        <addition>
+            <item>Navigation Bar: full site header with logo, Joomla menu, social icons, custom text and optional top bar</item>
+            <item>Navbar placement: block or overlay for use above slider/hero content in template positions</item>
+            <item>Navbar layout groups for Slot positions and Top bar, with optional horizontal divider</item>
+            <item>Navbar mobile chrome: centered logo (%), independent social/custom placement and custom mobile colors</item>
+            <item>Navbar styling: RGBA pickers for submenu, bar and mobile chrome backgrounds; custom menu/text rem sizes and colors</item>
+            <item>Navbar themes: default Gray with transparent bar; None seeds custom colors from the previous theme; optional logo size limits and active menu color</item>
+            <item>Content Blocks Simple Content with title, date, lead, main, sub text, read more, sizes and custom colors</item>
+            <item>Content Blocks Button with solid/outline/soft/ghost/link styles, sizes, themes, icon and full custom colors</item>
+            <item>Content Blocks Testimonials with quote, author, role, avatar and optional rating</item>
+            <item>Content Blocks Team member cards with photo, role, bio and optional profile link</item>
+            <item>Content Blocks Logo Cloud for partner/client logos with optional links and grayscale hover</item>
+            <item>Content Blocks Alert / Notice for page announcements with info/success/warning/danger tones</item>
+        </addition>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.2</version>
         <addition>
             <item>Navigation Dropdown Menu element with Joomla menu or custom manual items and nested submenu children</item>

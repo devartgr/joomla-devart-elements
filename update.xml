@@ -6,12 +6,12 @@
         <element>pkg_devartelements</element>
         <type>package</type>
         <client>site</client>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
         <infourl title="DevArt Elements">https://github.com/devartgr/joomla-devart-elements</infourl>
         <downloads>
-            <downloadurl type="full" format="zip">https://github.com/devartgr/joomla-devart-elements/releases/download/v1.1.2/pkg_devartelements_v1.1.2.zip</downloadurl>
+            <downloadurl type="full" format="zip">https://github.com/devartgr/joomla-devart-elements/releases/download/v1.1.3/pkg_devartelements_v1.1.3.zip</downloadurl>
         </downloads>
-        <sha256>e16289a3ccccf534e19f2d91056e366b3bb06f030b6f293a36889fc5cd5dd13a</sha256>
+        <sha256>6d1d46178d210a2190712a841f6b7ea6032a26b07ed0b8a80215c51607acce43</sha256>
         <tags>
             <tag>stable</tag>
         </tags>

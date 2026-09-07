@@ -1,5 +1,36 @@
 # Changelog
 
+## 1.1.3 (2026-09-07)
+
+### Added — Navigation Bar (highlight)
+- Full site **Navigation Bar**: logo, Joomla menu, social icons, custom text and
+  optional top bar.
+- Placement modes: **block** or **overlay** for use above slider/hero content.
+- Layout groups for **Slot positions** and **Top bar**; optional horizontal divider.
+- Mobile chrome: centered logo (width %), independent social/custom placement,
+  and custom mobile colors.
+- Styling depth: RGBA pickers (opacity + transparent) for submenu, bar and mobile
+  chrome backgrounds; custom menu/text rem sizes, line heights and colors.
+- Themes: default **Gray** with transparent bar; **None** seeds custom colors from
+  the previous named theme; optional logo max width/height limits; active menu
+  color when theme is None.
+
+### Added — Content Blocks
+- **Simple Content**: title, created date, lead, main, sub content, read more;
+  sizes from extra small to XX large plus custom rem; themes and custom colors
+  (no backgrounds).
+- **Button**: solid / outline / soft / ghost / link styles, sizes, themes, Font
+  Awesome icon and full custom colors.
+- **Testimonials**: quote, author, role, avatar and optional rating.
+- **Team**: member cards with photo, role, bio and optional profile link.
+- **Logo Cloud**: partner/client logos with optional links and grayscale hover.
+- **Alert / Notice**: lightweight page announcements with info / success /
+  warning / danger tones.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.2 (2026-09-01)
 
 ### Added
