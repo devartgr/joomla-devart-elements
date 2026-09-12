@@ -1,5 +1,33 @@
 # Changelog
 
+## 1.1.5 (2026-09-12)
+
+### Added — Content
+- **Hover Blocks**: color tiles with optional icon, title/link and photo on hover.
+- Title overlays the color/photo with **no background plate**; flush grid, optional gap and full-width.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
+## 1.1.4 (2026-09-12)
+
+### Added — Navigation
+- **Footer Menu**: up to 4 columns with heading + link items (icon, title, URL, same/new window).
+- Uppercase styling, hover underline and optional title tooltips for long labels.
+
+### Added — Media
+- **Photo Slider**: single-row photos with optional titles, hover icon, lightbox popup and auto-slide.
+- Pause on hover, configurable visible count, reduced-motion safe behaviour.
+
+### Fixed
+- Footer Menu admin form: replaced nested required subforms with four clear column groups on the Content tab so Save works.
+- Photo Slider: landscape 16:9 frames (was portrait), responsive lightbox, and one photo at a time on mobile.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.3 (2026-09-07)
 
 ### Added — Navigation Bar (highlight)
