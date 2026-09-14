@@ -3,6 +3,31 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.6</version>
+        <addition>
+            <item>Media Split Slider: two-column layout with title list and single photo</item>
+            <item>Split Slider active theme background and subtitle; hover + icon; keyboard navigation</item>
+            <item>Content Fade Blocks: stacked image/text rows with left photo fade into themed text column</item>
+            <item>Fade Blocks themes (default Dark), title size presets/custom rem, full module width and dividers</item>
+            <item>Content Grayscale Blocks: grayscale photos until hover/focus, then full color with themed title bar</item>
+            <item>Grayscale Blocks poster/landscape rectangular ratios, white inactive titles, columns, gap and full module width</item>
+            <item>Media Push Slider: vertical push slides with sharp left photo and blurred right overlay panel</item>
+            <item>Push Slider large title sizes, subtitle, text, themed button, arrows/dots and keyboard/swipe navigation</item>
+        </addition>
+        <change>
+            <item>Split Slider: active subtitle and title wrap inside the left column instead of overflowing under the photo</item>
+        </change>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.5</version>
         <addition>
             <item>Content Hover Blocks: color tiles with optional icon, title/link and hover photo</item>

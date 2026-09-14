@@ -9,24 +9,28 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.1.5` contains:
+Version `1.1.6` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights since 1.1.3
+### Highlights in 1.1.6
 
-- **Hover Blocks** — color tiles with optional icon, title/link and photo on hover (no title plate)
-- **Footer Menu** — up to 4 link columns (icon, title, URL, same/new window)
-- **Photo Slider** — landscape row, hover icon, lightbox, auto-slide, mobile 1-up
-- **Navigation Bar** — full site header (logo, Joomla menu, social, custom text, top bar, mobile chrome, overlay placement)
+- **Push Slider** — vertical push slides: sharp left photo, blurred right overlay with title/subtitle/text/button
+- **Split Slider** — title list left, photo right; theme active state and + hover
+- **Fade Blocks** — stacked photo→text fade rows (themes, title sizes, full width)
+- **Grayscale Blocks** — grayscale until hover/focus, then color + themed title bar (poster/landscape)
+
+### Also included since 1.1.3
+
+- **Hover Blocks**, **Footer Menu**, **Photo Slider**, **Navigation Bar**
 - Content Blocks: Simple Content, Button, Testimonials, Team, Logo Cloud, Alert / Notice
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.1.5.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.1.6.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation

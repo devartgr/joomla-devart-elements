@@ -1,5 +1,28 @@
 # Changelog
 
+## 1.1.6 (2026-09-14)
+
+### Added — Media
+- **Split Slider**: two-column layout — title list on the left, one photo on the right.
+- Active item shows classic DevArt theme background and subtitle; hover shows a + icon.
+- Keyboard navigation (arrows / Home / End) and reduced-motion safe image swap.
+- **Push Slider**: vertical push slides — sharp photo left, blurred photo + light overlay right.
+- Push Slider content: large title sizes (presets/custom rem), subtitle, text and themed button.
+- Push Slider controls: up/down arrows, dots, keyboard and vertical swipe.
+
+### Added — Content
+- **Fade Blocks**: stacked image/text rows — photo left with fade into themed text column (title, subtitle, text, icon link).
+- Classic DevArt themes (default **Dark**), title size presets/custom rem, optional full module width and dividers.
+- **Grayscale Blocks**: photo columns stay grayscale until hover/focus, then reveal color with a themed title bar.
+- Poster / Landscape rectangular ratios, white inactive titles, columns, gap and full module width.
+
+### Fixed
+- Split Slider: active subtitle and title wrap inside the left column instead of overflowing under the photo.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.5 (2026-09-12)
 
 ### Added — Content
