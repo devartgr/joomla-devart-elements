@@ -3,6 +3,24 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.8</version>
+        <addition>
+            <item>Image Block: full module width option on the Display tab</item>
+        </addition>
+        <fix>
+            <item>Image Block: removed false required warning on the image media field after an image is selected</item>
+        </fix>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+<changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.7</version>
         <addition>
             <item>Photo Slider: rising hover effect on photos</item>
@@ -46,7 +64,7 @@
     </changelog>
 
 
-    <changelog>
+<changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
         <version>1.1.5</version>

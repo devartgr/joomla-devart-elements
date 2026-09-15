@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.8 (2026-09-15)
+
+### Added — Media
+- **Image Block**: full module width option on the Display tab.
+
+### Fixed — Media
+- Image Block: removed the false required warning on the image media field after an image is selected.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.7 (2026-09-15)
 
 ### Added — Media
