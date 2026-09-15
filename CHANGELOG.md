@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.7 (2026-09-15)
+
+### Added — Media
+- **Photo Slider**: rising hover effect on photos.
+- **Photo Slider**: configurable gap between photos (none / small / medium / large).
+
+### Changed / Fixed — Media
+- Photo Slider: smoother infinite loop when restarting after the last photo.
+- Photo Slider: drop shadow corrected (no longer clipped by overflow).
+- Photo Slider: reliable visible-count and gap layout via JS pixel sizing.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.6 (2026-09-14)
 
 ### Added — Media

@@ -3,6 +3,27 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.7</version>
+        <addition>
+            <item>Photo Slider: rising hover effect on photos</item>
+            <item>Photo Slider: configurable gap between photos (none / small / medium / large)</item>
+        </addition>
+        <change>
+            <item>Photo Slider: smoother infinite loop when restarting from the last photo</item>
+            <item>Photo Slider: corrected drop shadow so it is no longer clipped by overflow</item>
+            <item>Photo Slider: reliable visible count and gap layout via JS pixel sizing</item>
+        </change>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+<changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.6</version>
         <addition>
             <item>Media Split Slider: two-column layout with title list and single photo</item>
