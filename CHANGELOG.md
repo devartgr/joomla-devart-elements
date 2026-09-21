@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.1.9 (2026-09-21)
+
+### Added — Content
+- **Icon Slider**: carousel of icon / title / intro / read more cards with per-card hover colour, full module width and autoplay.
+
+### Added — Media
+- **Audio Player**: progress / seek bar while playing (scrub forward and back).
+
+### Fixed
+- Video Block: removed the false required warning on the MP4 media field after a file is selected.
+- Icon Slider: idle title and intro use dark text (white only on hover), including against template module colour schemes.
+
+### Changed
+- Admin icon browser: expanded curated Font Awesome Free solid and brands set (shared by all Font Awesome icon fields).
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.8 (2026-09-15)
 
 ### Added — Media

@@ -3,6 +3,29 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.9</version>
+        <addition>
+            <item>Content Icon Slider: icon / title / intro / read more cards with per-card hover colour, full module width and autoplay</item>
+            <item>Audio Player: progress / seek bar while playing (scrub forward and back)</item>
+        </addition>
+        <fix>
+            <item>Video Block: removed false required warning on the MP4 media field after a file is selected</item>
+            <item>Icon Slider: idle title and intro use dark text (white only on hover)</item>
+        </fix>
+        <change>
+            <item>Admin icon browser: expanded curated Font Awesome Free solid and brands set</item>
+        </change>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.8</version>
         <addition>
             <item>Image Block: full module width option on the Display tab</item>

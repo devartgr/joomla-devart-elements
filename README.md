@@ -9,16 +9,21 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.1.8` contains:
+Version `1.1.9` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.1.8
+### Highlights in 1.1.9
 
-- **Image Block** — full module width option; fixed false required warning after selecting an image
+- **Icon Slider** — icon / title / intro / read more cards with per-card hover colour, full width and autoplay
+- **Audio Player** seek bar · Video MP4 required-field fix · expanded admin icon browser
+
+### Also in 1.1.8
+
+- **Image Block** — full module width; fixed false required warning after selecting an image
 
 ### Also in 1.1.7
 
@@ -35,7 +40,7 @@ Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.1.8.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.1.9.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation
