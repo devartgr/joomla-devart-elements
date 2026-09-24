@@ -3,6 +3,24 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.1.10</version>
+        <change>
+            <item>Joomla 7 forward compatibility: ElementTable uses getDatabase() instead of protected $_db</item>
+            <item>Joomla 7 forward compatibility: module content prepare uses ContentPrepareEvent dispatch</item>
+            <item>Joomla 7 forward compatibility: element edit form loads form.validate and keepalive via WebAssetManager</item>
+            <item>Module ElementFamilyHelper boots the component namespace instead of require_once</item>
+        </change>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.9</version>
         <addition>
             <item>Content Icon Slider: icon / title / intro / read more cards with per-card hover colour, full module width and autoplay</item>

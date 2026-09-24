@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.10 (2026-09-24)
+
+### Changed — Joomla 7 forward compatibility
+- **ElementTable**: uses `getDatabase()` instead of the protected `$_db` property (alias uniqueness checks).
+- **Module content prepare**: dispatches `ContentPrepareEvent` instead of legacy `triggerEvent`.
+- **Element edit form**: loads `form.validate` and `keepalive` via WebAssetManager (no HTMLHelper `behavior.*`).
+- **Module ElementFamilyHelper**: boots the component namespace with `bootComponent()` instead of `require_once`.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.9 (2026-09-21)
 
 ### Added — Content
