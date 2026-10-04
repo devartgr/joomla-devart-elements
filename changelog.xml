@@ -3,6 +3,54 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.2.0</version>
+        <security>
+            <item>URL cleaner strips control characters and allows only http/https/mailto/tel schemes</item>
+            <item>Protocol-relative URLs (//host) are rejected in links and media paths</item>
+            <item>Frontend HTML filter uses an explicit tag/attribute whitelist (style and iframe removed)</item>
+            <item>Article-backed elements enforce category published state and category access</item>
+            <item>Admin icon field preview uses safe DOM APIs instead of raw innerHTML</item>
+        </security>
+        <fix>
+            <item>Import commit validates preview payload inside a transaction-safe try/catch (no uncaught 500 on expired/invalid preview)</item>
+            <item>Article image paths are cleaned through UrlHelper::cleanMedia()</item>
+            <item>Menu-backed Accordion/Dropdown/Navbar/Tabs filter by publish window, access and language like core mod_menu, and resolve alias/URL/heading/separator links correctly</item>
+            <item>Module cachemode changed from static to itemid (Itemid + view levels); default module caching remains off</item>
+            <item>Element save/import also clears the Joomla page cache group</item>
+            <item>Import preview stores the validated payload in a temporary file with a small session token instead of the full JSON in session</item>
+            <item>Import alias uniqueness uses a single alias-index query instead of a COUNT query per imported row</item>
+            <item>Duplicate enforces core.edit plus element access, limits to 50 items, restores request family/mode, and surfaces save failures</item>
+            <item>Export extension_version is read from the installed component manifest</item>
+            <item>Import validates access/language against site data, inserts in chunks, keeps a small preview summary in session, and logs failures to com_devartelements.log.php</item>
+            <item>Database index idx_family_ordering (family, ordering) for the administrator Elements list</item>
+            <item>validate.php requires joomla.asset.json version match and resolves asset URIs the Joomla way (com_devartelements/file.css to media css/js folders)</item>
+            <item>Import skips unknown access/language rows; alias index is scoped to import types; duplicate clears cache once</item>
+            <item>Element picker validates GET CSRF token, shows unpublished badge, and is read-only without core.manage</item>
+        </fix>
+        <addition>
+            <item>Split Slider: optional auto slide with interval and pause on hover</item>
+            <item>Split Slider: optional full module width (edge-to-edge)</item>
+            <item>Full module width option added to remaining section-like element types (FAQ, Tabs, Accordion, Navbar, Footer Menu, Counter/Countdown, Statistics, Chart, CTA, Banner, Hero, Simple, Testimonials, Team, Logos, Alert, About, Branding, Photo Slider, Audio, Video, Pricing, Comparison)</item>
+            <item>Operator guide for Joomla module cache, FPC and Cloudflare (docs/caching.md in the repository)</item>
+            <item>Frontend module template split into per-type partials under tmpl/types (no intended behavior change)</item>
+            <item>Module element picker uses a lightweight searchable modal instead of loading every published element in a SQL dropdown</item>
+            <item>ElementTypeConfig centralises per-type content_json key whitelists and required-field checks for ElementModel::save()</item>
+            <item>Module Dispatcher type preparators dispatch via match (no intended behavior change)</item>
+        </addition>
+        <note>
+            <item>Newly added full-width options default OFF; legacy Blocks/Hover/Fade/Gray/Icon/Push keep previous default-ON behavior</item>
+            <item>Breaking content note: protocol-relative URLs (//example.com/...) are rejected in structured URL/media fields; rich-text HTML links are filtered separately</item>
+            <item>Breaking content note: inline style attributes and iframe embeds in element HTML are stripped on frontend render</item>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.1.10</version>
         <change>
             <item>Joomla 7 forward compatibility: ElementTable uses getDatabase() instead of protected $_db</item>

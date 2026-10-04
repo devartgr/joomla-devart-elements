@@ -1,5 +1,55 @@
 # Changelog
 
+## 1.2.0 (2026-10-04)
+
+### Security
+- URL cleaner: strip control characters; allow only `http` / `https` / `mailto` / `tel`.
+- Reject protocol-relative URLs (`//host`) in links and media paths.
+- Frontend HTML filter: explicit whitelist (no `style`, no `iframe`).
+- Article-backed FAQ/Tabs/Accordion: require published category + category access.
+- Admin icon field preview: safe DOM / `textContent` (no raw `innerHTML`).
+
+### Fixed
+- Import commit: validate preview payload inside try/catch (no uncaught 500).
+- Article images go through `UrlHelper::cleanMedia()`.
+- Menu-backed Accordion / Dropdown / Navbar / Tabs: filter by publish window, access, and language (like core `mod_menu`); resolve alias / URL / heading / separator item links correctly.
+- Module `cachemode` changed from `static` to `itemid` (keyed by Itemid + view levels). Default module caching remains OFF.
+- Import preview no longer stores the full JSON payload in the session (tmp file + small session token; 1-hour expiry).
+- Import alias uniqueness uses one alias-index query instead of a COUNT per row.
+- Duplicate: require `core.edit` + element access, limit 50, restore request family/mode, surface save failures; one cache clear after the batch.
+- Import skips rows with unknown access/language instead of silently remapping to Public / All languages.
+- Import alias index loads only the element types present in the import file.
+- Element picker modal validates its GET CSRF token; unpublished rows show a badge; module field is read-only without `core.manage`.
+- Cache clear failures are logged via `LogHelper` (still never block saves).
+- Export `extension_version` comes from the installed component manifest (not a hard-coded string).
+- Import validates access/language against site view levels and content languages; inserts in chunks; preview summary stays in session (no full-file decode on Tools view).
+- Import/export errors write to `com_devartelements.log.php` via a dedicated logger.
+- Database index `idx_family_ordering` (`family`, `ordering`) for the administrator Elements list query.
+- `scripts/validate.php` requires `joomla.asset.json` version to match the package and resolves asset URIs the Joomla way (`com_devartelements/file.css` → `media/.../css/file.css`).
+
+### Changed
+- Frontend module template split into per-type partials under `tmpl/types/` (no intended behavior change).
+- `ElementTypeConfig` holds per-type `content_json` key whitelists and required-field checks; `ElementModel::save()` delegates to it (no intended behavior change).
+- Module Dispatcher type preparator dispatch uses `match` instead of an if-chain (no intended behavior change).
+
+### Added
+- **Split Slider**: optional auto slide (interval + pause on hover).
+- **Split Slider**: optional full module width (edge-to-edge).
+- **Full module width** option on section-like elements: FAQ, Tabs, Accordion, Navbar, Footer Menu, Counter, Countdown, Statistics, Chart, CTA, Banner, Hero, Simple, Testimonials, Team, Logos, Alert, About, Branding, Photo Slider, Audio, Video, Pricing, Comparison (plus existing Blocks / Hover / Fade / Gray / Icon / Push / Split / Image).
+- Caching / Cloudflare operator guide: `docs/caching.md`.
+- Element save/import also clears the Joomla `page` cache group (in addition to module groups).
+- Module element picker: lightweight modal search (replaces the SQL dropdown that loaded every published element).
+
+### Upgrade warnings
+- Protocol-relative URLs (`//example.com/...`) are rejected in structured URL/media fields (`UrlHelper`). Links inside rich-text HTML still pass through the HTML whitelist filter and are not rejected solely for using `//`.
+- Inline `style` attributes and `iframe` embeds in element HTML are stripped on frontend render.
+- Newly added full-width switches (FAQ/Tabs/CTA/Hero/…, Split Slider, Photo Slider, etc.) default OFF; enable explicitly when needed. Legacy modules that already had full width (Blocks, Hover/Fade/Gray Blocks, Icon Slider, Push Slider) keep their previous default-ON behavior.
+- PHP 8.3 / 8.4 / 8.5 compatibility targets verified locally (CLI + Herd runtime); see `qa/checklist.md`.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.1.10 (2026-09-24)
 
 ### Changed — Joomla 7 forward compatibility
