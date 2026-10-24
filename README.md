@@ -9,21 +9,25 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.2.0` contains:
+Version `1.2.1` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.2.0
+### Highlights in 1.2.1
+
+- **Horizontal Menu** — clean single-row link bar from a Joomla menu or custom items
+- Classic colour themes, custom colours, solid or transparent background
+- Font size, spacing, uppercase, hover underline, optional icons, full module width
+
+### Also in 1.2.0
 
 - **Security** — stricter URL/media cleaning, protocol-relative URL rejection, frontend HTML whitelist, safer icon preview
 - **Split Slider** — optional auto slide and full module width
 - **Full module width** on remaining section-like element types
-- **Import / export / duplicate** hardening (access/language skips, scoped alias index, batched inserts, logging)
-- **Module element picker** — searchable modal instead of loading every published element
-- **Maintainability** — `ElementTypeConfig`, per-type module templates, Dispatcher `match` dispatch
+- **Import / export / duplicate** hardening · module element picker · maintainability refactor
 
 ### Also in 1.1.10
 
@@ -53,7 +57,7 @@ Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.2.0.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.2.1.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation

@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.2.1 (2026-10-24)
+
+### Added — Navigation
+- **Horizontal Menu**: clean single-row link bar from a Joomla menu or custom items.
+- Classic DevArt colour themes (red / orange / blue / green / yellow / gray / dark) plus custom colours.
+- Solid or transparent background, font size presets/custom rem, item spacing, uppercase, hover underline, optional Font Awesome icons (custom items), full module width, and active-item highlighting for Joomla menu sources.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.0 (2026-10-04)
 
 ### Security
