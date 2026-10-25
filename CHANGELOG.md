@@ -1,5 +1,34 @@
 # Changelog
 
+## 1.2.2 (2026-10-25)
+
+### Improved — Navigation Horizontal Menu
+- Nested submenus with Max depth (3+ levels) without dropping later top-level items.
+- Submenu expand direction: **Down** or **Right (flyout)**.
+- Active/hover style: text-only or **Gantry-like background**.
+- Optional open-on-hover; click still works on touch / when hover is off.
+- Custom items support nested children (up to 3 form levels).
+
+### Improved — Navigation Bar
+- Submenu expand direction: **Down** or **Right (flyout)** (Menu tab).
+- Active/hover style: text-only or **Gantry-like background** (Menu tab).
+- Active background height: **Padded** or **Full height** (Gantry bar fill).
+- Mobile panel: **Off-canvas left/right** (Gantry-style body-portaled full-height drawer + backdrop) or Fade; close (X) control; nested items open on tap only; resize resets open state.
+- Off-canvas link styles reset after portal (no UA grey buttons / white-on-light text); caret spacing improved.
+- Full-height Gantry highlight is edge-to-edge without inflating the bar height.
+- Navbar desktop submenu width: Auto / Compact / Medium / Wide / Custom (px).
+- Max menu items limits top-level only; nested items load within Max depth.
+- Submenu Gantry highlight no longer inherits top-bar colours; multi-line submenu labels left-align with caret on the first line.
+- Submenu Gantry hover no longer loses label contrast on colour themes (cascade overrode text colour to match the fill).
+
+### Fixed — Navigation
+- Navbar / Dropdown menu loading no longer SQL-limits the full tree by `lft` (deeper max depth no longer hides later top items).
+- Navbar submenu JS keeps ancestor panels open when opening nested levels; nested panels fly to the right by default.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.1 (2026-10-24)
 
 ### Added — Navigation

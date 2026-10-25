@@ -9,14 +9,21 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.2.1` contains:
+Version `1.2.2` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.2.1
+### Highlights in 1.2.2
+
+- **Horizontal Menu** — nested submenus, expand down/right, Gantry-like active background
+- **Navigation Bar** — same expand + Gantry styles; full-height highlight; off-canvas mobile drawer with close control
+- Navbar desktop submenu width presets (Auto / Compact / Medium / Wide / Custom)
+- Tree-loading fix so deeper max depth no longer hides later top-level items
+
+### Also in 1.2.1
 
 - **Horizontal Menu** — clean single-row link bar from a Joomla menu or custom items
 - Classic colour themes, custom colours, solid or transparent background
@@ -57,7 +64,7 @@ Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.2.1.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.2.2.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation
