@@ -3,12 +3,28 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.2.3</version>
+        <fix>
+            <item>Navbar parent items with a real menu URL keep their link; caret toggles the submenu</item>
+            <item>Navbar caret chevron size restored (hit-area padding no longer inflates the icon)</item>
+        </fix>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.2.2</version>
         <addition>
             <item>Horizontal Menu nested submenus with max depth, expand down/right, and Gantry-like active background</item>
             <item>Navbar desktop submenu width presets: Auto, Compact, Medium, Wide, or Custom (px)</item>
         </addition>
-        <change>
+        <fix>
             <item>Navbar/Dropdown tree loading no longer drops later top-level items when max depth increases</item>
             <item>Navbar nested submenu open state keeps ancestor panels and flies nested levels to the right</item>
             <item>Navbar submenu expand direction (down or right flyout) and Gantry-like active/hover background on Menu tab</item>
@@ -17,7 +33,7 @@
             <item>Navbar off-canvas contrast and caret/social spacing fixes after portal mount</item>
             <item>Navbar max menu items limits top-level only; nested items load within max depth</item>
             <item>Navbar submenu Gantry highlight scoped so top-bar colours do not wash out submenu text; multi-line submenu labels left-align</item>
-        </change>
+        </fix>
         <note>
             <item>Recommended update for all DevArt Elements installations</item>
             <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>

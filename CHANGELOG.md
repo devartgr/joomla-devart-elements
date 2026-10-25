@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.3 (2026-10-26)
+
+### Fixed — Navigation Bar
+- Parent items with a real menu URL keep their link (no longer forced to a non-linking button); the caret toggles the submenu.
+- Caret chevron size restored (hit-area padding no longer inflates the icon).
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.2 (2026-10-25)
 
 ### Improved — Navigation Horizontal Menu
