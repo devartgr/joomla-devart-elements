@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.2.5 (2026-10-26)
+
+### Added — Social Icon Bar
+- New Content Blocks element: horizontal or vertical social icon bar.
+- Preset networks (Facebook, X, Twitter, Instagram, YouTube, LinkedIn, WhatsApp, Telegram, TikTok, Pinterest, Threads, Vimeo, GitHub, RSS, Email) plus custom Font Awesome icon.
+- Admin auto-fills the matching Font Awesome icon (and empty label) when a network is selected.
+- Display: icon size, spacing, shape (circle / rounded / square / plain), alignment.
+- Colour style: original brand colours, DevArt theme, or uniform mono (hover uses brand when known).
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.4 (2026-10-26)
 
 ### Fixed — Footer Menu

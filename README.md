@@ -9,14 +9,19 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.2.4` contains:
+Version `1.2.5` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.2.4
+### Highlights in 1.2.5
+
+- **Social Icon Bar** — horizontal/vertical bar with preset networks, auto-filled icons, sizes, spacing, shapes
+- Colour styles: original brand colours, DevArt theme, or uniform mono
+
+### Also in 1.2.4
 
 - **Footer Menu** — optional column headings; link URLs stored as entered (no site-root prefix)
 - Footer Menu Display: divider lines, font size, vertical item spacing
@@ -74,7 +79,7 @@ Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.2.4.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.2.5.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation

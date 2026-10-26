@@ -3,6 +3,22 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.2.5</version>
+        <addition>
+            <item>Social Icon Bar: horizontal/vertical bar with preset networks, sizes, spacing, shapes, and brand/theme/mono colours</item>
+            <item>Social Icon Bar admin auto-fills the Font Awesome icon when a network is selected</item>
+        </addition>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.2.4</version>
         <fix>
             <item>Footer Menu column headings are optional; columns with links render without a heading</item>
