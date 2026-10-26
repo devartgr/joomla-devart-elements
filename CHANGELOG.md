@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.2.4 (2026-10-26)
+
+### Fixed — Footer Menu
+- Column headings are optional: columns with link titles render without a heading.
+- Link URL fields no longer prepend the site root path (e.g. `/v7/`); values are stored as entered.
+- Previously saved URLs that included the site base path are normalised on load/save and when rendered.
+- Link URL may be left empty for a text-only label.
+
+### Improved — Footer Menu
+- Display: optional item divider lines (full-width under each link).
+- Display: font size Small / Normal / Large / Custom (rem).
+- Display: vertical item spacing Small / Normal / Large.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.3 (2026-10-26)
 
 ### Fixed — Navigation Bar

@@ -3,6 +3,27 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.2.4</version>
+        <fix>
+            <item>Footer Menu column headings are optional; columns with links render without a heading</item>
+            <item>Footer Menu link URLs no longer prepend the site root path; values are stored as entered</item>
+            <item>Footer Menu normalises previously saved URLs that included the site base path</item>
+            <item>Footer Menu link URL may be left empty for a text-only label</item>
+        </fix>
+        <addition>
+            <item>Footer Menu Display: optional item divider lines, font size (small/normal/large/custom), vertical item spacing</item>
+        </addition>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.2.3</version>
         <fix>
             <item>Navbar parent items with a real menu URL keep their link; caret toggles the submenu</item>
