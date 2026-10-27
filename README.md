@@ -9,14 +9,20 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.2.5` contains:
+Version `1.2.6` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.2.5
+### Highlights in 1.2.6
+
+- **Live Blog Banner** — LIVE badge with blinking dot, article title (optional custom headline), share buttons
+- Optional article date (created/modified as `d/m/Y H:i`) and Google News CTA (`preferences/source?q=` + domain)
+- White headline without underline; news247-style padding; compact mobile LIVE pill
+
+### Also in 1.2.5
 
 - **Social Icon Bar** — horizontal/vertical bar with preset networks, auto-filled icons, sizes, spacing, shapes
 - Colour styles: original brand colours, DevArt theme, or uniform mono
@@ -79,7 +85,7 @@ Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.2.5.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.2.6.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation

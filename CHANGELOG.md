@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.2.6 (2026-10-28)
+
+### Added — Live Blog Banner
+- New Content Blocks element: live / breaking news banner.
+- LIVE badge with blinking CSS dot (customisable badge text).
+- Headline defaults to the selected article title; optional custom headline toggle.
+- Share bar: Facebook, X, WhatsApp, and Copy link (article URL).
+- Optional article date (created or modified), shown as `d/m/Y H:i` (e.g. 19/10/2026 00:35).
+- Google News uses fixed `https://www.google.com/preferences/source?q=` + site domain.
+- Display: headline size (sm/md/lg/custom rem), full module width, strong theme colours.
+- White headline without underline; news247-style horizontal padding; compact mobile LIVE pill.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.5 (2026-10-26)
 
 ### Added — Social Icon Bar

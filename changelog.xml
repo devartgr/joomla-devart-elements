@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <changelogs>
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
+        <version>1.2.6</version>
+        <addition>
+            <item>Live Blog Banner: LIVE badge with blinking dot, article title (optional custom headline), share buttons (Facebook/X/WhatsApp/Copy)</item>
+            <item>Live Blog: article created/modified date (d/m/Y H:i), Google News fixed preferences URL + domain, strong themes and full width</item>
+        </addition>
+        <change>
+            <item>Live Blog: white headline without underline; news247-style padding; compact mobile LIVE pill</item>
+        </change>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
