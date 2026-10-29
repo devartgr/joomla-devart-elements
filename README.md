@@ -9,14 +9,21 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.2.6` contains:
+Version `1.2.7` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.2.6
+### Highlights in 1.2.7
+
+- **Collage Slider** — Gantry Showcase-style overlapping 4-photo groups with fixed layout (570×760 / 570×426 frames)
+- Desktop: up/down arrows left of the collage, drop shadows, optional dots, lightbox, autoplay
+- Mobile: sequential slides — photos 1–3 alone, photo 4 with text/CTA card, then next group
+- Live Blog domain hint uses generic `domain.gr` example
+
+### Also in 1.2.6
 
 - **Live Blog Banner** — LIVE badge with blinking dot, article title (optional custom headline), share buttons
 - Optional article date (created/modified as `d/m/Y H:i`) and Google News CTA (`preferences/source?q=` + domain)

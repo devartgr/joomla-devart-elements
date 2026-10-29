@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.2.7 (2026-10-29)
+
+### Added — Collage Slider
+- New Media element inspired by Gantry Showcase (designgroup.gr): overlapping groups of 4 photos.
+- Strict fixed layout for every group (slot widths + 570×760 / 570×426 frames with object-fit cover).
+- Desktop arrows sit left of the collage; all photos use drop shadow.
+- Mobile: sequential slides like Gantry Showcase — photos 1–3 alone, photo 4 with text/CTA card, then next group.
+- Up/down arrows and optional pagination dots to switch collage groups.
+- Optional lightbox popup per photo (same pattern as Photo Slider).
+- Autoplay with interval and pause on hover.
+- Per-group heading, text and CTA button; transparent background (no dark band); theme accent.
+
+### Changed — Live Blog
+- Google domain field hint/description uses generic `domain.gr` example.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.6 (2026-10-28)
 
 ### Added — Live Blog Banner
