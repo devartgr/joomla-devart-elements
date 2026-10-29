@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.2.8 (2026-10-29)
+
+### Added — Stage Slider
+- New Media element: large single-image stage slider inspired by designgroup.gr slideshow.
+- Bottom progress bar tied to autoplay interval; pagination dots and side arrows.
+- Theme colour for progress / dots / arrow hover (DevArt themes).
+- CSS-only transition effects: fade, slide, zoom, wipe, blur, flip (no external libraries).
+- Transition duration presets: very short / short / medium / long / very long.
+- Full module width, aspect-ratio or fixed height, optional max width, optional lightbox.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.7 (2026-10-29)
 
 ### Added — Collage Slider

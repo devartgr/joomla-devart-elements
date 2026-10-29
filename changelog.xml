@@ -3,6 +3,22 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.2.8</version>
+        <addition>
+            <item>Stage Slider: large single-image stage with progress bar, dots, arrows and theme accent</item>
+            <item>Stage Slider: CSS-only transition effects (fade, slide, zoom, wipe, blur, flip) with duration presets; full width and fixed size options; optional lightbox</item>
+        </addition>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.2.7</version>
         <addition>
             <item>Collage Slider: Gantry Showcase-style overlapping 4-photo groups with fixed slot layout (570×760 / 570×426 frames)</item>
