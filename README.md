@@ -9,14 +9,22 @@ Reusable content elements for Joomla 6+.
 
 ## Package
 
-Version `1.2.8` contains:
+Version `1.2.9` contains:
 
 - `com_devartelements` — administrator component (source of truth for element records)
 - `mod_devartelements` — frontend module renderer for one published element
 
 Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
-### Highlights in 1.2.8
+### Highlights in 1.2.9
+
+- Quality / security hardening: chart theme escape, admin FA SRI, safer admin select fields
+- Article content plugins receive article `attribs`; video MIME by extension; shared `UrlHelper`
+- Menu-source trees via SiteMenu `getItems()`; `whereIn()` for ID lists
+- Navbar: desktop wrap for long menus + social; logo keeps aspect ratio; hamburger only at breakpoint
+- Optional git pre-commit + GitHub Actions validate workflow
+
+### Also in 1.2.8
 
 - **Stage Slider** — large single-image stage with progress bar, dots, arrows and theme accent
 - CSS-only transition effects (fade, slide, zoom, wipe, blur, flip) with duration presets
@@ -98,7 +106,7 @@ Element families: Content Blocks, Navigation, Data, Media, and Pricing.
 
 ## Install / Update
 
-1. Install or update `pkg_devartelements_v1.2.6.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
+1. Install or update `pkg_devartelements_v1.2.9.zip` from [Releases](https://github.com/devartgr/joomla-devart-elements/releases).
 2. Or use Joomla’s extension update server (configured in the package manifest).
 
 ## Documentation

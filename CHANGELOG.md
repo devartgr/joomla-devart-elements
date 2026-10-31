@@ -1,5 +1,31 @@
 # Changelog
 
+## 1.2.9 (2026-10-31)
+
+### Security
+- Chart: whitelist and escape `color_mode` / chart type in frontend class attributes (closes stored attribute-injection path).
+- Chart admin form: theme field uses `validate="options"`.
+
+### Fixed
+- Article `onContentPrepare` now receives the article `attribs` Registry (not element config).
+- Video `<source>` MIME type is derived from the file extension (`mp4`/`webm`/`ogv`); omitted when unknown.
+
+### Changed
+- Admin Font Awesome CDN load includes SRI (`integrity` + `crossorigin`).
+- Shared component `UrlHelper` for URL/media sanitisation; module facade + import path use the same implementation.
+- Admin ElementSelect / ArticleSelect fields build selected markup with DOM APIs (`textContent` / `createElement`) instead of `innerHTML`.
+- Menu-source elements (navbar, horizontal menu, dropdown, accordion) read the site menu tree from SiteMenu `getItems()` instead of an extra `#__menu` query per module.
+- Article/menu ID loads use Query `whereIn()` for integer lists (Joomla pattern).
+- Optional git pre-commit hook + GitHub Actions validate workflow (`scripts/validate.php` on PHP 8.3–8.5).
+- Navbar: desktop bar wraps menu/social/custom instead of overflowing; logo keeps aspect ratio (no stretch); hamburger only at the configured breakpoint.
+
+- Documented uninstall data loss and frontend Font Awesome template requirement (`docs/operations.md`).
+- Audit consolidation notes under `docs/audits/`.
+
+### Requirements
+- Joomla 6.0+
+- PHP 8.3.0+
+
 ## 1.2.8 (2026-10-29)
 
 ### Added — Stage Slider

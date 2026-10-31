@@ -3,6 +3,36 @@
     <changelog>
         <element>pkg_devartelements</element>
         <type>package</type>
+        <version>1.2.9</version>
+        <security>
+            <item>Chart theme/type class attributes are whitelisted and escaped on the frontend</item>
+            <item>Chart admin theme field uses validate="options"</item>
+            <item>Admin Font Awesome CDN stylesheet uses Subresource Integrity</item>
+            <item>Admin ElementSelect / ArticleSelect use DOM APIs instead of dynamic innerHTML</item>
+        </security>
+        <fix>
+            <item>Article onContentPrepare receives article attribs Registry (not element config)</item>
+            <item>Video source MIME type is derived from file extension (mp4/webm/ogv); omitted when unknown</item>
+            <item>Navbar desktop bar wraps menu/social/custom instead of overflowing; logo keeps aspect ratio</item>
+        </fix>
+        <change>
+            <item>Shared component UrlHelper for URL/media sanitisation (module facade + import)</item>
+            <item>Menu-source navbar/horizontal/dropdown/accordion use SiteMenu getItems() (no extra #__menu query)</item>
+            <item>Article/menu ID queries use whereIn() for integer lists</item>
+            <item>Optional git pre-commit hook and GitHub Actions validate workflow</item>
+            <item>Documented uninstall data loss and frontend Font Awesome requirement</item>
+        </change>
+        <note>
+            <item>Recommended update for all DevArt Elements installations</item>
+            <item>Requires Joomla 6.0+ and PHP 8.3.0+</item>
+            <item>Always test updates on a staging environment before production deployment</item>
+        </note>
+    </changelog>
+
+
+    <changelog>
+        <element>pkg_devartelements</element>
+        <type>package</type>
         <version>1.2.8</version>
         <addition>
             <item>Stage Slider: large single-image stage with progress bar, dots, arrows and theme accent</item>
